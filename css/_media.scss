@@ -10,6 +10,10 @@
             width: 100% !important;
             margin: auto !important;
             display: inline-block !important;
+            transition: 0.5s;
+            &:hover {
+               transform: scale(1.1);
+            }
          }
          h1 {
             font-size: 40px !important;

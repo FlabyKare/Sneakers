@@ -6,6 +6,12 @@
     width: 100% !important;
     margin: auto !important;
     display: inline-block !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header main .mobile_sneakers:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   header main h1 {
     font-size: 40px !important;
@@ -332,7 +338,7 @@ header main h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

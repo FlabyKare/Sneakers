@@ -211,8 +211,8 @@ body {
       transform: rotate(360deg);
    }
 }
-.mobile_sneakers{
-    display: none;
+.mobile_sneakers {
+   display: none;
 }
 .container {
    width: 100%;
@@ -241,6 +241,7 @@ header {
       justify-content: space-between;
       flex-wrap: wrap;
       margin-top: 100px;
+
       h1 {
          font-weight: 600;
          font-size: 61px;
@@ -276,7 +277,7 @@ header {
    }
    ul {
       display: flex;
-      gap: 30px;
+      gap: 0px;
       justify-content: center;
       align-items: center;
       margin-top: 50px;
