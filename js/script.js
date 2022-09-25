@@ -31,12 +31,39 @@ for (let elm of elements) {
 // Слайдер
 
 $(".sneakers_slider").slick({
-   infinite: true,
+   infinite: false,
    slidesToShow: 4,
+   slidesToScroll: 2,
    arrows: true,
    dots: false,
-   //    autoplay: true,
-   //    autoplayspeed: 3000,
-   variableWidth: true,
-
+   responsive: [
+      {
+         breakpoint: 1200,
+         settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+         },
+      },
+      {
+         breakpoint: 930,
+         settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+         },
+      },
+      {
+         breakpoint: 768,
+         settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+         },
+      },
+      {
+        breakpoint: 655,
+        settings: {
+           slidesToShow: 1,
+           slidesToScroll: 1,
+        },
+     },
+   ],
 });

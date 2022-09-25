@@ -49,6 +49,32 @@
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .slick-list {
+    margin: auto !important;
+  }
+  .slick-prev {
+    left: 75% !important;
+  }
+  .slick-next {
+    right: 70px !important;
+  }
+  .li_container {
+    margin: auto !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slick-list {
+    margin: auto !important;
+  }
+  .slick-prev {
+    left: 75% !important;
+  }
+  .slick-next {
+    right: 70px !important;
+  }
+  .li_container {
+    margin: auto !important;
+  }
 }
 @media (max-width: 1092.98px) {
   header main {
@@ -62,6 +88,17 @@
   }
   header main * {
     text-align: center !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .slick-list {
+    margin: auto !important;
+  }
+  .slick-prev {
+    left: 85% !important;
+  }
+  .slick-next {
+    right: 50px !important;
   }
 }
 html,
@@ -414,6 +451,7 @@ header main h1 span {
 
 .sneakers {
   position: relative;
+  overflow: hidden;
 }
 .sneakers * {
   text-align: left;
@@ -574,7 +612,7 @@ header main h1 span {
 .slick-prev,
 .slick-next {
   z-index: 100;
-  top: -35px;
+  top: -60px;
 }
 .slick-prev::before,
 .slick-next::before {
@@ -586,12 +624,12 @@ header main h1 span {
 
 .slick-next {
   z-index: 100;
-  right: -25px;
+  right: 0px;
 }
 
 .slick-prev {
   z-index: 100;
-  left: 1035px;
+  left: 1000px;
 }
 
 .slick-track {

@@ -318,6 +318,7 @@ header {
 
 .sneakers {
    position: relative;
+   overflow: hidden;
    * {
       text-align: left;
    }
@@ -375,7 +376,7 @@ header {
    }
 
    .slick-slide {
-      width: 265px;
+      width: 265px ;
       margin: 0 15px;
    }
    .slick-list {
@@ -470,7 +471,7 @@ header {
 .slick-prev,
 .slick-next {
    z-index: 100;
-   top: -35px;
+   top: -60px;
    &::before {
       font-size: 42px;
       line-height: 1;
@@ -480,11 +481,11 @@ header {
 }
 .slick-next {
    z-index: 100;
-   right: -25px;
+   right: 0px;
 }
 .slick-prev {
    z-index: 100;
-   left: 1035px;
+   left: 1000px;
 }
 .slick-track {
    transition: 0 !important;
