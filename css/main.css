@@ -1,4 +1,8 @@
+@charset "UTF-8";
 @media (min-width: 320px) and (max-width: 575.98px) {
+  .element-animation {
+    opacity: 1 !important;
+  }
   header main img {
     display: none;
   }
@@ -25,6 +29,25 @@
   }
   .benefits ul li {
     padding: 55px 0 !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .element-animation {
+    opacity: 1 !important;
+  }
+  header main img {
+    display: none;
+  }
+  header main .mobile_sneakers {
+    width: 100% !important;
+    margin: auto !important;
+    display: inline-block !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header main .mobile_sneakers:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 @media (max-width: 1092.98px) {
@@ -257,6 +280,17 @@ body {
     transform: rotate(360deg);
   }
 }
+.element-animation {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+}
+
+.element-show {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s !important;
+  transition: opacity 1.5s !important;
+}
+
 .mobile_sneakers {
   display: none;
 }
@@ -315,10 +349,7 @@ header main h1 span {
   color: #ee5514;
 }
 
-.benefits {
-  margin: 140px auto;
-}
-.benefits .title {
+.title {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
@@ -326,13 +357,18 @@ header main h1 span {
   letter-spacing: 0.05em;
   color: #ee5514;
 }
-.benefits h4 {
+
+.subtitle {
   font-weight: 600;
   font-size: 44px;
   line-height: 130%;
   text-align: center;
   color: #dfdfdf;
   margin-top: 10px;
+}
+
+.benefits {
+  margin: 140px auto;
 }
 .benefits ul {
   display: -webkit-box;
@@ -356,8 +392,6 @@ header main h1 span {
 .benefits ul li {
   width: 100%;
   max-width: 360px;
-  -webkit-box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
-          box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
   border-radius: 10px;
   padding: 55px;
   text-align: center;
@@ -376,4 +410,191 @@ header main h1 span {
   margin-top: 25px;
   text-align: center;
   color: #dfdfdf;
+}
+
+.sneakers {
+  position: relative;
+}
+.sneakers * {
+  text-align: left;
+}
+.sneakers nav {
+  margin-top: 18px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+}
+.sneakers p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #dfdfdf;
+  opacity: 0.7;
+}
+.sneakers a,
+.sneakers span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sneakers a::before,
+.sneakers span::before {
+  content: "";
+  position: absolute;
+  background: #ee5514;
+  width: 0;
+  height: 1px;
+  bottom: -5px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+.sneakers a:hover,
+.sneakers span:hover {
+  color: rgb(238, 85, 20);
+}
+.sneakers a:hover::before,
+.sneakers span:hover::before {
+  right: auto;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+.sneakers main {
+  width: 100%;
+}
+.sneakers .slick-slide {
+  width: 265px;
+  margin: 0 15px;
+}
+.sneakers .slick-list {
+  margin: 0 -35px;
+}
+.sneakers ul * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.sneakers ul img {
+  border: 2px solid rgba(238, 85, 20, 0);
+  -webkit-filter: drop-shadow(0px 1px 30px rgba(26, 10, 3, 0.05));
+          filter: drop-shadow(0px 1px 30px rgba(26, 10, 3, 0.05));
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sneakers ul li {
+  cursor: pointer;
+}
+.sneakers ul li .li_container {
+  max-width: 265px;
+  min-width: 265px;
+}
+.sneakers ul li:hover .btn_form {
+  margin-top: 15px;
+  max-width: 100%;
+}
+.sneakers ul li:hover img {
+  border: 2px solid rgb(238, 85, 20);
+}
+.sneakers ul .li_title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  color: #fff;
+  margin-top: 30px;
+}
+.sneakers ul .li_size {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.sneakers ul p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sneakers ul p span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.sneakers ul p span::after {
+  margin-bottom: -3px;
+}
+.sneakers ul .btn_form {
+  margin-top: 15px;
+  max-width: 128px;
+}
+
+.btn_form {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 128px;
+}
+.btn_form .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  background: #ee5514;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn_form .btn:hover {
+  background: #ba4411;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 100;
+  top: -35px;
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 42px;
+  line-height: 1;
+  color: #ee5514;
+  opacity: 1;
+}
+
+.slick-next {
+  z-index: 100;
+  right: -25px;
+}
+
+.slick-prev {
+  z-index: 100;
+  left: 1035px;
+}
+
+.slick-track {
+  -webkit-transition: 0 !important;
+  transition: 0 !important;
 }

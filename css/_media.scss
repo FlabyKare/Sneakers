@@ -1,6 +1,9 @@
 // Intro
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+   .element-animation {
+      opacity: 1 !important;
+   }
    header {
       main {
          img {
@@ -35,6 +38,25 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .element-animation {
+      opacity: 1 !important;
+   }
+   header {
+      main {
+         img {
+            display: none;
+         }
+         .mobile_sneakers {
+            width: 100% !important;
+            margin: auto !important;
+            display: inline-block !important;
+            transition: 0.5s;
+            &:hover {
+               transform: scale(1.1);
+            }
+         }
+      }
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
