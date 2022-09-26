@@ -318,9 +318,11 @@ header {
 
 .sneakers {
    position: relative;
-   overflow: hidden;
+   overflow-x: hidden;
+
    * {
       text-align: left;
+      height: fit-content;
    }
    nav {
       margin-top: 18px;
@@ -376,13 +378,45 @@ header {
    }
 
    .slick-slide {
-      width: 265px ;
+      width: 265px;
       margin: 0 15px;
+      div:nth-child(1) {
+         margin-bottom: 30px;
+      }
+      div {
+         margin: auto;
+      }
    }
    .slick-list {
       margin: 0 -35px;
    }
-
+   .slick-slider {
+      margin-bottom: 140px;
+   }
+   .slick-dots {
+      //   bottom: -65px;
+      position: initial !important;
+      margin-top: 30%;
+      display: flex;
+      justify-content: center;
+      * {
+         transition: 0.5s;
+      }
+      li {
+         height: 25px;
+         button:before {
+            font-size: 20px;
+            color: #ee5514;
+            opacity: 0.25;
+         }
+      }
+      .slick-active {
+         button:before {
+            font-size: 20px;
+            opacity: 1;
+         }
+      }
+   }
    ul {
       * {
          transition: 0.5s;

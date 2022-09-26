@@ -35,7 +35,8 @@ $(".sneakers_slider").slick({
    slidesToShow: 4,
    slidesToScroll: 2,
    arrows: true,
-   dots: false,
+   dots: true,
+   rows: 2,
    responsive: [
       {
          breakpoint: 1200,
@@ -55,15 +56,16 @@ $(".sneakers_slider").slick({
          breakpoint: 768,
          settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
          },
       },
       {
-        breakpoint: 655,
-        settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-        },
-     },
+         breakpoint: 655,
+         settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows: 1,
+         },
+      },
    ],
 });
