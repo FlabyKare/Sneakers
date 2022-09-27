@@ -209,12 +209,20 @@
    .slick-dots {
       margin-top: 5% !important;
    }
+   .slick-prev {
+   z-index: 100;
+   left: 955px !important;
+}
 }
 
 @media (min-width: 1400px) {
    .slick-dots {
       margin-top: 5% !important;
    }
+   .slick-prev {
+   z-index: 100;
+   left: 88% !important;
+}
 }
 
 // Display none -  .slick-dots for iphones

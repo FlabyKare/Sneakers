@@ -199,10 +199,18 @@
   .slick-dots {
     margin-top: 5% !important;
   }
+  .slick-prev {
+    z-index: 100;
+    left: 955px !important;
+  }
 }
 @media (min-width: 1400px) {
   .slick-dots {
     margin-top: 5% !important;
+  }
+  .slick-prev {
+    z-index: 100;
+    left: 88% !important;
   }
 }
 @media (width: 320px) and (height: 568px) {
@@ -1039,6 +1047,7 @@ header main h1 span {
 .slick-next {
   z-index: 100000 !important;
   top: -60px;
+  width: 45px;
 }
 .slick-prev::before,
 .slick-next::before {

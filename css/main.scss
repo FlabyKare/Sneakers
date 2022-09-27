@@ -510,6 +510,7 @@ header {
 .slick-next {
    z-index: 100000 !important ;
    top: -60px;
+   width: 45px;
    &::before {
       font-size: 42px;
       line-height: 1;
