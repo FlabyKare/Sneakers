@@ -69,3 +69,15 @@ $(".sneakers_slider").slick({
       },
    ],
 });
+
+// let sneakersList = document.querySelectorAll(".sneakers_item");
+
+// function popupInnerInfo() {
+//    this.addEventListener("click", () => {
+//       console.log(this.children[1].id);
+//    });
+// }
+
+// for (let elemt of sneakersList) {
+//    elemt.addEventListener("click", () => console.log(elemt.children[0].id));
+// }

@@ -134,7 +134,7 @@
     top: 881px !important;
   }
   .slick-dots {
-    margin-top: 30px !important;
+    margin-top: 110px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -154,7 +154,7 @@
     margin: auto !important;
   }
   .slick-dots {
-    margin-top: 66px !important;
+    margin-top: 150px !important;
   }
   .slick-prev,
 .slick-next {
@@ -922,7 +922,7 @@ header main h1 span {
 }
 .sneakers .slick-dots {
   position: initial !important;
-  margin-top: 30%;
+  margin-top: 35%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
