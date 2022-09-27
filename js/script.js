@@ -69,12 +69,21 @@ $(".sneakers_slider").slick({
       },
    ],
 });
-
+const popup_back_black = document.querySelector(".popup_back_black");
+const popup = document.querySelector(".popup");
+function popupActive() {
+   popup.classList.toggle("active");
+}
+popup_back_black.addEventListener("click", () => {
+    popupActive();
+ });
 let sneakersList = document.querySelectorAll(".li_container");
 let sneakers = document.querySelector(".sneakers");
 for (let elemt of sneakersList) {
-   elemt.addEventListener("click", () => {
+   elemt.children[4].addEventListener("click", () => {
+      popupActive();
       sneakers.children[1].innerHTML = elemt.children[1].innerHTML;
    });
+
 }
-// elemt.addEventListener("click", () => console.log(elemt.children[3].id));
+// sneakers.children[1].innerHTML = elemt.children[1].innerHTML;

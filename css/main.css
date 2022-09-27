@@ -561,7 +561,6 @@ table {
 }
 
 body {
-  padding: 60px 0 30px;
   font-family: "Poppins", sans-serif;
   background: #1e252b;
 }
@@ -654,6 +653,60 @@ body {
   transition: opacity 1.5s !important;
 }
 
+.popup.active {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: all;
+}
+.popup.active .popup_back_black {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 37, 43, 0.7);
+  z-index: 1;
+}
+.popup.active .popup_wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(207deg, #497992, #0e2377); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto;
+  z-index: 10;
+  text-align: center;
+  border-radius: 25px;
+  padding: 40px 30px 30px;
+  cursor: pointer;
+}
+.popup.active .popup_wrapper .li_title {
+  margin-top: 0;
+}
+.popup.active .popup_wrapper * {
+  cursor: pointer;
+}
+
+.popup {
+  position: relative;
+  z-index: -12;
+  opacity: 0;
+  pointer-events: none;
+}
+.popup .popup_back_black {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .mobile_sneakers {
   display: none;
 }
@@ -665,6 +718,9 @@ body {
   padding: 0 30px;
 }
 
+header {
+  padding-top: 60px !important;
+}
 header h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -917,17 +973,6 @@ header main h1 span {
 .sneakers ul li:hover img {
   border: 2px solid rgb(238, 85, 20);
 }
-.sneakers ul .li_title {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 150%;
-  color: #fff;
-  margin-top: 30px;
-}
-.sneakers ul .li_size {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 .sneakers ul p {
   font-weight: 400;
   font-size: 16px;
@@ -977,6 +1022,19 @@ header main h1 span {
   background: #ba4411;
 }
 
+.li_title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.li_size {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .slick-prev,
 .slick-next {
   z-index: 100000 !important;
@@ -993,12 +1051,12 @@ header main h1 span {
 }
 
 .slick-next {
-  z-index: 100;
+  z-index: 0 !important;
   right: 0px;
 }
 
 .slick-prev {
-  z-index: 100;
+  z-index: 0 !important;
   left: 1000px;
 }
 
