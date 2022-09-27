@@ -209,160 +209,286 @@
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 320px) and (width: 568px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 375px) and (height: 667px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 375px) and (width: 667px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 414px) and (height: 736px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 414px) and (width: 736px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
+  }
+}
+@media (width: 414px) and (height: 896px) {
+  .slick-dots {
+    display: none !important;
+  }
+  .slick-prev,
+.slick-next {
+    top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
+  }
+}
+@media (height: 414px) and (width: 896px) {
+  .slick-dots {
+    display: none !important;
+  }
+  .slick-prev,
+.slick-next {
+    top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 320px) and (height: 568px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 320px) and (width: 568px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 375px) and (height: 812px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 375px) and (width: 812px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 390px) and (height: 844px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 390px) and (width: 844px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 428px) and (height: 896px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 428px) and (width: 896px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 390px) and (height: 844px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 390px) and (width: 844px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 393px) and (height: 852px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 393px) and (width: 852px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (width: 430px) and (height: 932px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 @media (height: 430px) and (width: 932px) {
   .slick-dots {
     display: none !important;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+.slick-next {
     top: 550px !important;
+    width: 45px !important;
+  }
+  .slick-prev {
+    left: 25% !important;
   }
 }
 html,
@@ -803,12 +929,12 @@ header main h1 span {
 .sneakers .slick-dots {
   position: initial !important;
   margin-top: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 .sneakers .slick-dots * {
   -webkit-transition: 0.5s;
@@ -917,7 +1043,7 @@ header main h1 span {
 
 .slick-prev,
 .slick-next {
-  z-index: 100;
+  z-index: 100000 !important;
   top: -60px;
 }
 .slick-prev::before,

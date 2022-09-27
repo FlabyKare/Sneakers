@@ -397,8 +397,8 @@ header {
       //   bottom: -65px;
       position: initial !important;
       margin-top: 30%;
-      display: flex;
-      justify-content: center;
+      display: flex !important;
+      justify-content: center !important;
       * {
          transition: 0.5s;
       }
@@ -508,7 +508,7 @@ header {
 
 .slick-prev,
 .slick-next {
-   z-index: 100;
+   z-index: 100000 !important;
    top: -60px;
    &::before {
       font-size: 42px;
