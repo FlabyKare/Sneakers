@@ -508,7 +508,7 @@ header {
 
 .slick-prev,
 .slick-next {
-   z-index: 100000 !important;
+   z-index: 100000 !important ;
    top: -60px;
    &::before {
       font-size: 42px;
