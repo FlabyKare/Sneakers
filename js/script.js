@@ -69,21 +69,71 @@ $(".sneakers_slider").slick({
       },
    ],
 });
-const popup_back_black = document.querySelector(".popup_back_black");
+const popupBackBlack = document.querySelector(".popup_back_black");
 const popup = document.querySelector(".popup");
+const popupWrapper = document.querySelector(".popup_wrapper");
+const close = document.querySelector(".close");
+
 function popupActive() {
    popup.classList.toggle("active");
 }
-popup_back_black.addEventListener("click", () => {
-    popupActive();
- });
+popupBackBlack.addEventListener("click", () => {
+   popupActive();
+});
+close.addEventListener("click", () => {
+   popupActive();
+});
+
 let sneakersList = document.querySelectorAll(".li_container");
+let price = document.querySelectorAll(".priceValue");
 let sneakers = document.querySelector(".sneakers");
 for (let elemt of sneakersList) {
    elemt.children[4].addEventListener("click", () => {
       popupActive();
-      sneakers.children[1].innerHTML = elemt.children[1].innerHTML;
+      popupWrapper.children[2].innerHTML = elemt.children[1].innerHTML;
+      popupWrapper.children[3].innerHTML = elemt.children[2].innerHTML;
+      popupWrapper.children[4].src = elemt.children[0].src;
+      popupWrapper.children[5].innerHTML = elemt.children[3].innerHTML;
+      popupWrapper.children[4].addEventListener("click", () => {
+         document.querySelectorAll(".choose_img").forEach((btn) =>
+            btn.addEventListener("click", () => {
+               const priceValue = btn
+                  .closest(".popup_wrapper")
+                  .querySelector(".priceValue");
+               popupWrapper.children[5].innerHTML = `Price:<span> $<span class="priceValue">${(popupWrapper.children[5].innerHTML =
+                  +priceValue.textContent * 2)}</span></span>`;
+               console.log(popupWrapper.children[5].innerHTML);
+            })
+         );
+      });
    });
-
+   elemt.children[0].addEventListener("click", () => {
+      popupActive();
+      popupWrapper.children[2].innerHTML = elemt.children[1].innerHTML;
+      popupWrapper.children[3].innerHTML = elemt.children[2].innerHTML;
+      popupWrapper.children[4].src = elemt.children[0].src;
+      popupWrapper.children[5].innerHTML = elemt.children[3].innerHTML;
+      popupWrapper.children[4].addEventListener("click", () => {
+         document.querySelectorAll(".choose_img").forEach((btn) =>
+            btn.addEventListener("click", () => {
+               const priceValue = btn
+                  .closest(".popup_wrapper")
+                  .querySelector(".priceValue");
+               popupWrapper.children[5].innerHTML = `Price:<span> $<span class="priceValue">${(+priceValue.textContent * 2)}</span></span>`;
+               console.log(popupWrapper.children[5].innerHTML);
+            })
+         );
+      });
+   });
 }
 // sneakers.children[1].innerHTML = elemt.children[1].innerHTML;
+function priceDouble() {
+   document.querySelectorAll(".btn_form .btn").forEach((btn) =>
+      btn.addEventListener("click", () => {
+         const priceValue = btn
+            .closest(".li_container")
+            .querySelector(".priceValue");
+         console.log(+priceValue.textContent * 2);
+      })
+   );
+}
