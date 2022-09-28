@@ -29,6 +29,7 @@
     <div id="preloader">
         <div id="loader"></div>
     </div>
+
     <ul class="popup">
         <div class="popup_back_black"></div>
         <div class="popup_wrapper">
@@ -37,8 +38,39 @@
             <p id="2" class="li_title">Puma RS-X Bold</p>
             <p id="3" class="li_size"></p>
             <img class="choose_img" alt="choosedSneakers"></img>
+
+            
             <p id="4" class="li_price"></p>
+
+
+            <form class="quantity_inner ">
+                <input type="hidden" name="project_name" value="Заказ с моего сайта">
+                <input type="hidden" name="admin_email" value="beslansoblirov074@gmail.com">
+                <input class="choosed" type="hidden" name="form_subject" value='"Заявка - Main"'>
+
+
+
+
+                <div class="bt_minus coune_mines">-</div>
+                <input class="form_input form_name quantity" type="text" name="Пар: " placeholder="1" value="1" required maxlength="2" >
+                <div class="bt_plus coune_plus">+</div>
+
+
+
+
+                <input class="form_input form_name" type="text" name="Имя: " placeholder="Ваше имя" required
+                    minlength="4" maxlength="15">
+                <input class="form_input form_tel tel" type="tel" name="Телефон: " placeholder="+7 (XXX) XXX XX XX"
+                    required>
+                <input class="form_input form_site" type="text" name="Связь: "
+                    placeholder="Какой мессенджер предпочитаете?" required minlength="4">
+                <input class="form_input form_site" type="text" name="Адресс: "
+                    placeholder="Ваш адресс (доставка только по г.Нальчик)" required minlength="4">
+                <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
+            </form>
         </div>
+
+
 
     </ul>
     <header class="container element-animation">

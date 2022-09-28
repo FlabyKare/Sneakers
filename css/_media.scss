@@ -4,7 +4,41 @@
 
 @media (min-width: 320px) and (max-width: 575.98px) {
    .popup_wrapper {
-      max-width: 450px;
+      max-width: 80%;
+      form {
+        margin-top: 3%;
+         div {
+            display: inline-block;
+            font-size: 40px;
+            cursor: pointer;
+            top: 40.9% !important;
+            // position: initial !important;
+         }
+         .coune_mines {
+            left: 39% !important;
+         }
+         .coune_plus {
+            right: 39% !important;
+         }
+
+         input:nth-child(5) {
+            width: 50px !important;
+            height: 50px !important;
+            padding: 9px;
+            text-align: center;
+            margin-top: 0 !important;
+            position: initial !important;
+            &:focus {
+               &::placeholder {
+                  text-align: center !important;
+               }
+            }
+            &::placeholder {
+               text-align: center !important;
+               color: black;
+            }
+         }
+      }
    }
 }
 
