@@ -1,22 +1,40 @@
 @charset "UTF-8";
+@media (max-width: 351.98px) {
+  form div {
+    top: 332px !important;
+  }
+}
+@media (min-width: 352px) and (max-width: 575.98px) {
+  form div {
+    top: 332px !important;
+  }
+}
+@media (max-height: 774.98px) {
+  .popup_wrapper {
+    height: 90% !important;
+    overflow-y: scroll;
+  }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
   .popup_wrapper {
     max-width: 80%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .popup_wrapper .choose_img {
+    display: initial !important;
   }
   .popup_wrapper form {
-    margin-top: 3%;
-  }
-  .popup_wrapper form div {
-    display: inline-block;
-    font-size: 40px;
-    cursor: pointer;
-    top: 40.9% !important;
+    margin-top: 20px;
   }
   .popup_wrapper form .coune_mines {
-    left: 39% !important;
+    left: -3% !important;
   }
   .popup_wrapper form .coune_plus {
-    right: 39% !important;
+    right: 23% !important;
+  }
+  .popup_wrapper form input {
+    width: 100%;
   }
   .popup_wrapper form input:nth-child(5) {
     width: 50px !important;
@@ -815,7 +833,7 @@ body {
   max-width: 200px;
   max-height: 150px;
   border-radius: 25px;
-  margin-bottom: 3%;
+  margin-bottom: 7px;
   text-align: left;
   display: block;
 }
@@ -832,7 +850,7 @@ body {
   display: inline-block;
   font-size: 40px;
   cursor: pointer;
-  top: 26.5%;
+  top: 195px;
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -922,9 +940,10 @@ body {
   height: 50px !important;
   padding: 9px;
   text-align: center;
-  top: 24%;
+  top: 180px;
   right: 22.7%;
   position: absolute;
+  pointer-events: none;
 }
 .popup.active form input:nth-child(5):focus::-webkit-input-placeholder {
   text-align: center !important;

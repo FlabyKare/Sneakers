@@ -39,8 +39,14 @@
             <p id="3" class="li_size"></p>
             <img class="choose_img" alt="choosedSneakers"></img>
 
-            
-            <p id="4" class="li_price"></p>
+
+            <p id="4" class="li_price">
+                <!--
+                    Price:<span> $<span class="priceValue">180</span></span> 
+
+                    Это вставляется через js
+                -->
+            </p>
 
 
             <form class="quantity_inner ">
@@ -51,20 +57,21 @@
 
 
 
-                <div class="bt_minus coune_mines">-</div>
-                <input class="form_input form_name quantity" type="text" name="Пар: " placeholder="1" value="1" required maxlength="2" >
-                <div class="bt_plus coune_plus">+</div>
+                <div class="bt_minus coune_mines counter__decrement">-</div>
+                <input class="form_input form_value quantity" type="text" name="Пар: " placeholder="1" value="1"
+                    required maxlength="2">
+                <div class="bt_plus coune_plus counter__increment">+</div>
 
 
 
 
                 <input class="form_input form_name" type="text" name="Имя: " placeholder="Ваше имя" required
-                    minlength="4" maxlength="15">
+                    minlength="4" maxlength="25">
                 <input class="form_input form_tel tel" type="tel" name="Телефон: " placeholder="+7 (XXX) XXX XX XX"
                     required>
                 <input class="form_input form_site" type="text" name="Связь: "
                     placeholder="Какой мессенджер предпочитаете?" required minlength="4">
-                <input class="form_input form_site" type="text" name="Адресс: "
+                <input class="form_input form_adress" type="text" name="Адресс: "
                     placeholder="Ваш адресс (доставка только по г.Нальчик)" required minlength="4">
                 <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
             </form>
@@ -130,7 +137,7 @@
                     <img width="100%" height="170px" src="img/Sneakers/2.jpg" alt="">
                     <p class="li_title">Puma Sneakers</p>
                     <p class="li_size">Size:<span> Dubble-XL</span></p>
-                    <p class="li_price">Price:<span> $<span class="priceValue">180</span></span></p>
+                    <p class="li_price">Price:<span> $<span class="priceValue" data-price="180">180</span></span></p>
                     <form action="#" class="btn_form">
                         <button class="btn" type="button">Buy now</button>
                     </form>

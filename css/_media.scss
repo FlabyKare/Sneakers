@@ -1,26 +1,45 @@
 // Попап
 
 // Intro
-
+@media (max-width: 351.98px) {
+   form {
+      div {
+         top: 332px !important;
+      }
+   }
+}
+@media (min-width: 352px) and (max-width: 575.98px) {
+   form {
+      div {
+         top: 332px !important;
+      }
+   }
+}
+@media (max-height: 774.98px) {
+   .popup_wrapper {
+      height: 90% !important;
+      overflow-y: scroll;
+   }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
    .popup_wrapper {
       max-width: 80%;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .choose_img {
+         display: initial !important;
+      }
       form {
-        margin-top: 3%;
-         div {
-            display: inline-block;
-            font-size: 40px;
-            cursor: pointer;
-            top: 40.9% !important;
-            // position: initial !important;
-         }
+         margin-top: 20px;
          .coune_mines {
-            left: 39% !important;
+            left: -3% !important;
          }
          .coune_plus {
-            right: 39% !important;
+            right: 23% !important;
          }
-
+         input {
+            width: 100%;
+         }
          input:nth-child(5) {
             width: 50px !important;
             height: 50px !important;
