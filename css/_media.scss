@@ -40,7 +40,7 @@
          input {
             width: 100%;
          }
-         input:nth-child(5) {
+         .form_value {
             width: 50px !important;
             height: 50px !important;
             padding: 9px;
@@ -187,7 +187,7 @@
 }
 @media (max-width: 499.98px) {
    .slick-prev {
-      left: 27% !important;
+      left: 32% !important;
    }
    .slick-next {
       right: 29% !important;

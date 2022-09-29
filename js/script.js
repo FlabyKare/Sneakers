@@ -87,75 +87,62 @@ const adress = document.querySelector(".form_adress");
 let sneakersList = document.querySelectorAll(".li_container");
 let price = document.querySelectorAll(".priceValue");
 let sneakers = document.querySelector(".sneakers");
+let inputCounter = document.querySelector(".quantity"),
+   pricePopup = popup.querySelector(".priceValue");
+
 if (bodyWidth < 576) {
    email.placeholder = "Мессенджер";
    adress.placeholder = "Ваш адресс";
 }
 function popupActive() {
    popup.classList.toggle("active");
-   
 }
 popupBackBlack.addEventListener("click", () => {
+   inputCounter.value = 1;
+
    popupActive();
 });
 close.addEventListener("click", () => {
+   inputCounter.value = 1;
    popupActive();
 });
-function counter() {
-   var sum = document.querySelector(".priceValue").innerHTML;
-   var priceValue = document.querySelector(".priceValue");
-   console.log(priceValue);
-   $(".quantity_inner .bt_minus").click(function () {
-      let $input = $(this).parent().find(".quantity");
-      let count = parseInt($input.val()) - 1;
-      count = count < 0 ? 0 : count;
-      $input.val(count);
-      priceValue.innerHTML = +priceValue.innerHTML - +sum;
-      console.log(priceValue.innerHTML);
-      if (priceValue.innerHTML <= 0) {
-         priceValue.innerHTML *= 0;
-      }
-   });
-   // Прибавляю кол-во по клику
-   $(".quantity_inner .bt_plus").click(function () {
-      let $input = $(this).parent().find(".quantity");
-      let count = parseInt($input.val()) + 1;
-      count =
-         count > parseInt($input.data("max-count"))
-            ? parseInt($input.data("max-count"))
-            : count;
-      $input.val(parseInt(count));
 
-      if (+sum > 0) {
-         priceValue.innerHTML = +priceValue.innerHTML + +sum;
-         console.log(priceValue.innerHTML);
-      }
-   });
-}
+// New code
+let btnBuy = document.querySelectorAll("._js-btn-buy");
 
-for (let elemt of sneakersList) {
-   elemt.children[4].addEventListener("click", () => {
+btnBuy.forEach((btn) => {
+   btn.addEventListener("click", () => {
+      generatePopup(btn.closest(".sneakers_item"));
       popupActive();
-      liTitle.innerHTML = elemt.children[1].innerHTML;
-      liSize.innerHTML = elemt.children[2].innerHTML;
-      chooseImg.src = elemt.children[0].src;
-      liPrice.innerHTML = elemt.children[3].innerHTML;
-      counter();
    });
+});
 
+function generatePopup(productHTML) {
+   const title = productHTML.querySelector(".li_title").textContent,
+      size = productHTML.querySelector(".li_size span").textContent,
+      price = productHTML.querySelector(".priceValue").textContent,
+      img = productHTML.querySelector("img").cloneNode();
+
+   popup.querySelector(".li_title").innerHTML = title;
+   popup.querySelector(".li_size").innerHTML = size;
+   popup.querySelector(".li_price .priceValue").innerHTML = price;
+   popup.querySelector(".li_price .priceValue").dataset.price = price;
+   popup.querySelector(".choose_img").src = img.src;
+
+   console.log(title, size, price, img);
 }
-
-// sneakers.children[1].innerHTML = elemt.children[1].innerHTML;
-// function priceDouble() {
-//    document.querySelectorAll(".btn_form .btn").forEach((btn) =>
-//       btn.addEventListener("click", () => {
-//          const priceValue = btn
-//             .closest(".li_container")
-//             .querySelector(".priceValue");
-//          console.log(+priceValue.textContent * 2);
-//       })
-//    );
-// }
+function plus() {
+   let price = pricePopup.dataset.price;
+   inputCounter.value = +inputCounter.value + 1;
+   pricePopup.innerHTML = price * +inputCounter.value;
+}
+function minus() {
+   let price = pricePopup.dataset.price;
+   if (+inputCounter.value > 1) {
+      inputCounter.value = +inputCounter.value - 1;
+   }
+   pricePopup.innerHTML = price * +inputCounter.value;
+}
 
 // Отправка формы
 

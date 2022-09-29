@@ -36,7 +36,7 @@
   .popup_wrapper form input {
     width: 100%;
   }
-  .popup_wrapper form input:nth-child(5) {
+  .popup_wrapper form .form_value {
     width: 50px !important;
     height: 50px !important;
     padding: 9px;
@@ -44,38 +44,38 @@
     margin-top: 0 !important;
     position: initial !important;
   }
-  .popup_wrapper form input:nth-child(5):focus::-webkit-input-placeholder {
+  .popup_wrapper form .form_value:focus::-webkit-input-placeholder {
     text-align: center !important;
   }
-  .popup_wrapper form input:nth-child(5):focus::-moz-placeholder {
+  .popup_wrapper form .form_value:focus::-moz-placeholder {
     text-align: center !important;
   }
-  .popup_wrapper form input:nth-child(5):focus:-ms-input-placeholder {
+  .popup_wrapper form .form_value:focus:-ms-input-placeholder {
     text-align: center !important;
   }
-  .popup_wrapper form input:nth-child(5):focus::-ms-input-placeholder {
+  .popup_wrapper form .form_value:focus::-ms-input-placeholder {
     text-align: center !important;
   }
-  .popup_wrapper form input:nth-child(5):focus::placeholder {
+  .popup_wrapper form .form_value:focus::placeholder {
     text-align: center !important;
   }
-  .popup_wrapper form input:nth-child(5)::-webkit-input-placeholder {
-    text-align: center !important;
-    color: black;
-  }
-  .popup_wrapper form input:nth-child(5)::-moz-placeholder {
+  .popup_wrapper form .form_value::-webkit-input-placeholder {
     text-align: center !important;
     color: black;
   }
-  .popup_wrapper form input:nth-child(5):-ms-input-placeholder {
+  .popup_wrapper form .form_value::-moz-placeholder {
     text-align: center !important;
     color: black;
   }
-  .popup_wrapper form input:nth-child(5)::-ms-input-placeholder {
+  .popup_wrapper form .form_value:-ms-input-placeholder {
     text-align: center !important;
     color: black;
   }
-  .popup_wrapper form input:nth-child(5)::placeholder {
+  .popup_wrapper form .form_value::-ms-input-placeholder {
+    text-align: center !important;
+    color: black;
+  }
+  .popup_wrapper form .form_value::placeholder {
     text-align: center !important;
     color: black;
   }
@@ -190,7 +190,7 @@
 }
 @media (max-width: 499.98px) {
   .slick-prev {
-    left: 27% !important;
+    left: 32% !important;
   }
   .slick-next {
     right: 29% !important;
@@ -935,7 +935,7 @@ body {
   color: #aba8a8;
   font-family: cursive;
 }
-.popup.active form input:nth-child(5) {
+.popup.active form .form_value {
   width: 50px !important;
   height: 50px !important;
   padding: 9px;
@@ -945,38 +945,38 @@ body {
   position: absolute;
   pointer-events: none;
 }
-.popup.active form input:nth-child(5):focus::-webkit-input-placeholder {
+.popup.active form .form_value:focus::-webkit-input-placeholder {
   text-align: center !important;
 }
-.popup.active form input:nth-child(5):focus::-moz-placeholder {
+.popup.active form .form_value:focus::-moz-placeholder {
   text-align: center !important;
 }
-.popup.active form input:nth-child(5):focus:-ms-input-placeholder {
+.popup.active form .form_value:focus:-ms-input-placeholder {
   text-align: center !important;
 }
-.popup.active form input:nth-child(5):focus::-ms-input-placeholder {
+.popup.active form .form_value:focus::-ms-input-placeholder {
   text-align: center !important;
 }
-.popup.active form input:nth-child(5):focus::placeholder {
+.popup.active form .form_value:focus::placeholder {
   text-align: center !important;
 }
-.popup.active form input:nth-child(5)::-webkit-input-placeholder {
-  text-align: center !important;
-  color: black;
-}
-.popup.active form input:nth-child(5)::-moz-placeholder {
+.popup.active form .form_value::-webkit-input-placeholder {
   text-align: center !important;
   color: black;
 }
-.popup.active form input:nth-child(5):-ms-input-placeholder {
+.popup.active form .form_value::-moz-placeholder {
   text-align: center !important;
   color: black;
 }
-.popup.active form input:nth-child(5)::-ms-input-placeholder {
+.popup.active form .form_value:-ms-input-placeholder {
   text-align: center !important;
   color: black;
 }
-.popup.active form input:nth-child(5)::placeholder {
+.popup.active form .form_value::-ms-input-placeholder {
+  text-align: center !important;
+  color: black;
+}
+.popup.active form .form_value::placeholder {
   text-align: center !important;
   color: black;
 }
