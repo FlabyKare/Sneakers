@@ -132,6 +132,13 @@ body {
    font-family: "Poppins", sans-serif;
    background: #1e252b;
 }
+
+
+/*======================================================*/
+/*======================Заготовки======================*/
+/*======================================================*/
+
+
 .loaded {
    #preloader {
       display: none;
@@ -331,7 +338,7 @@ body {
          border: none;
          width: 100%;
          font-weight: 600;
-         font-family: system-ui !important;
+         font-family: sans-serif !important;
          font-size: 15px;
          color: #dfdfdf;
          background: transparent;
@@ -347,7 +354,7 @@ body {
          padding: 15px 19px 15px 5%;
          margin-top: 20px;
          font-weight: 600;
-         font-family: system-ui !important;
+         font-family: sans-serif !important;
          font-size: 15px;
          line-height: 130%;
          text-align: left;
@@ -364,7 +371,7 @@ body {
             line-height: 130%;
             text-align: left;
             color: #aba8a8;
-            font-family: cursive;
+
          }
       }
       .form_value {
@@ -414,6 +421,45 @@ body {
       transition: 0.5s;
    }
 }
+.btn_form {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 128px;
+    .btn {
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 160%;
+       color: #ffffff;
+       text-align: center;
+       width: 100%;
+       padding: 15px 0;
+       background: #ee5514;
+       border-radius: 5px;
+       border: none;
+       transition: 0.5s;
+       cursor: pointer;
+ 
+       &:hover {
+          background: #ba4411;
+       }
+    }
+ }
+ .li_title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    color: #fff;
+    margin-top: 30px;
+ }
+ .li_size {
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+
+
+
+/*======================================================*/
+ /*======================================================*/
 
 .mobile_sneakers {
    display: none;
@@ -669,40 +715,7 @@ header {
       }
    }
 }
-.btn_form {
-   margin-top: 10px;
-   width: 100%;
-   max-width: 128px;
-   .btn {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 160%;
-      color: #ffffff;
-      text-align: center;
-      width: 100%;
-      padding: 15px 0;
-      background: #ee5514;
-      border-radius: 5px;
-      border: none;
-      transition: 0.5s;
-      cursor: pointer;
 
-      &:hover {
-         background: #ba4411;
-      }
-   }
-}
-.li_title {
-   font-weight: 600;
-   font-size: 22px;
-   line-height: 150%;
-   color: #fff;
-   margin-top: 30px;
-}
-.li_size {
-   margin-bottom: 10px;
-   margin-top: 10px;
-}
 .slick-prev,
 .slick-next {
    z-index: 100000 !important ;
