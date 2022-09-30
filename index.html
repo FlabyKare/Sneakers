@@ -32,50 +32,44 @@
 
     <ul class="popup">
         <div class="popup_back_black"></div>
-        <div class="popup_wrapper">
+
+        <form class="popup_wrapper" action="telegram.php" method="POST">
             <h5>Заказать</h5>
             <img class="close" width="35px" height="35px" src="img/Sneakers/cross.png" alt="">
-            <p id="2" class="li_title">Puma RS-X Bold</p>
-            <p id="3" class="li_size"></p>
+            <input name="title" class="input_form li_title" value="">
+            <input name="size" class="input_form li_size" value="">
             <img class="choose_img" alt="choosedSneakers"></img>
 
 
-            <p id="4" class="li_price">
-                Price:<span> $<span class="priceValue" data-price="180">180</span></span>
-                <!--
-                    Price:<span> $<span class="priceValue">180</span></span>
-
-                    Это вставляется через js
-                -->
+            <p class="li_price">
+                Цена (в рублях): <input class="priceValue input_form" name="price" value="" data-price="180">
             </p>
 
-            <form action="telegram.php" method="POST">
-                <div class="bt_minus coune_mines counter__decrement" onclick="minus()">-</div>
-                <input class="form_input form_value quantity" type="text" name="par" placeholder="1" value="1"
-                    required maxlength="2">
-                <div class="bt_plus coune_plus counter__increment" onclick="plus()">+</div>
-                
-                <input class="form-control form_input form_name" type="text" name="name" placeholder="Ваше имя" required
-                    minlength="4" maxlength="25">
 
-                <input class="form-control form_input form_tel tel" type="tel" name="phone"
-                    placeholder="+7 (XXX) XXX XX XX" required>
+            <div class="bt_minus coune_mines counter__decrement" onclick="minus()">-</div>
+            <input class="form_input form_value quantity" type="text" name="par" placeholder="1" value="1" required
+                maxlength="2">
+            <div class="bt_plus coune_plus counter__increment" onclick="plus()">+</div>
 
-                <input class="form-control form_input form_site" type="text" name="email"
-                    placeholder="Какой мессенджер предпочитаете?" required minlength="4">
+            <input class="form-control form_input form_name" type="text" name="name" placeholder="Ваше имя" required
+                minlength="4" maxlength="25">
 
-                <input class="form-contro form_input form_adress" type="text" name="adress"
-                    placeholder="Ваш адресс (доставка только по г.Нальчик)" required minlength="4">
+            <input class="form-control form_input form_tel tel" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX"
+                required>
 
-                <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
-            </form>
-        </div>
+            <input class="form-control form_input form_site" type="text" name="email"
+                placeholder="Какой мессенджер предпочитаете?" required minlength="4">
 
+            <input class="form-contro form_input form_adress" type="text" name="adress"
+                placeholder="Ваш адресс (доставка только по г.Нальчик)" required minlength="4">
 
+            <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
+        </form>
 
     </ul>
     <header class="container element-animation">
-        <h3><img src="img/favicon.ico" alt="">neakers</h3>
+        <h3 translate="no"><img src="img/favicon/android-chrome-512x512.png" width="48px" height="48px" alt="">neakers
+        </h3>
 
         <main>
             <h1>Life is better in running <span>shoes</span>

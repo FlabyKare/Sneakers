@@ -123,9 +123,9 @@ function generatePopup(productHTML) {
       price = productHTML.querySelector(".priceValue").textContent,
       img = productHTML.querySelector("img").cloneNode();
 
-   popup.querySelector(".li_title").innerHTML = title;
-   popup.querySelector(".li_size").innerHTML = size;
-   popup.querySelector(".li_price .priceValue").innerHTML = price;
+   popup.querySelector(".li_title").value = title;
+   popup.querySelector(".li_size").value = size;
+   popup.querySelector(".li_price .priceValue").value = price;
    popup.querySelector(".li_price .priceValue").dataset.price = price;
    popup.querySelector(".choose_img").src = img.src;
 
@@ -134,14 +134,14 @@ function generatePopup(productHTML) {
 function plus() {
    let price = pricePopup.dataset.price;
    inputCounter.value = +inputCounter.value + 1;
-   pricePopup.innerHTML = price * +inputCounter.value;
+   pricePopup.value = price * +inputCounter.value;
 }
 function minus() {
    let price = pricePopup.dataset.price;
    if (+inputCounter.value > 1) {
       inputCounter.value = +inputCounter.value - 1;
    }
-   pricePopup.innerHTML = price * +inputCounter.value;
+   pricePopup.value = price * +inputCounter.value;
 }
 
 // Отправка формы

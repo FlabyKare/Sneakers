@@ -10,6 +10,8 @@ $adress = $_POST['adress'];
 $par = $_POST['par'];
 $title = $_POST['title'];
 $size = $_POST['size'];
+$price = $_POST['price'];
+
 
 $token = "1007513873:AAHRuGZ8Cr1wULSsMevQi6S1KtbdwbSyfiU";
 $chat_id = "-399030555";
@@ -20,7 +22,10 @@ $arr = array(
   'Адресс: ' => $adress,
   'Количество: ' => $par,
   'Название: ' => $title,
-  'Размер: ' => $size
+  'Размер: ' => $size,
+  'Цена: ' => $price
+
+
 
 );
 
@@ -30,7 +35,7 @@ foreach($arr as $key => $value) {
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
-if ($sendToTelegram && $sendToTelegram2) {
+if ($sendToTelegram) {
   header('Location: thanks.html');
 } else {
   echo "Error";

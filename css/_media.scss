@@ -1,24 +1,38 @@
 // Попап
 
 // Intro
-@media (max-width: 351.98px) {
-   form {
-      div {
-         top: 332px !important;
-      }
-   }
-}
-@media (min-width: 352px) and (max-width: 575.98px) {
-   form {
-      div {
-         top: 332px !important;
-      }
-   }
-}
+// @media (max-width: 351.98px) {
+//    form {
+//       div {
+//          top: 332px !important;
+//       }
+//    }
+// }
+
 @media (max-height: 774.98px) {
    .popup_wrapper {
       height: 90% !important;
       overflow-y: scroll;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      &::-webkit-scrollbar {
+         background: #43708f;
+         width: 3px !important;
+         max-width: 3px !important;
+         min-width: 3px !important;
+
+      }
+      &::-webkit-scrollbar-button {
+         display: none;
+      }
+      &::-webkit-scrollbar-track {
+         background: #43708f;
+      }
+      &::-webkit-scrollbar-thumb {
+         width: 100%;
+         background: #fff;
+         border-radius: 60px;
+      }
    }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
@@ -26,36 +40,50 @@
       max-width: 80%;
       padding-left: 10px !important;
       padding-right: 10px !important;
+      p {
+         flex-direction: column;
+         padding-left: 0 !important;
+         input {
+            width: 170px !important;
+            text-align: center !important;
+            margin: auto;
+         }
+      }
       .choose_img {
          display: initial !important;
       }
       form {
          margin-top: 20px;
-         .coune_mines {
-            left: -3% !important;
-         }
-         .coune_plus {
-            right: 23% !important;
-         }
          input {
             width: 100%;
          }
-         .form_value {
-            width: 50px !important;
-            height: 50px !important;
-            padding: 9px;
-            text-align: center;
-            margin-top: 0 !important;
-            position: initial !important;
-            &:focus {
-               &::placeholder {
-                  text-align: center !important;
-               }
-            }
+      }
+      .coune_mines {
+         left: -3% !important;
+         top: 418px !important;
+      }
+      .coune_plus {
+         right: 23% !important;
+         top: 418px !important;
+      }
+      .li_price {
+         margin-bottom: 20px;
+      }
+      .form_value {
+         width: 50px !important;
+         height: 50px !important;
+         padding: 9px;
+         text-align: center;
+         margin-top: 0 !important;
+         position: initial !important;
+         &:focus {
             &::placeholder {
                text-align: center !important;
-               color: black;
             }
+         }
+         &::placeholder {
+            text-align: center !important;
+            color: black;
          }
       }
    }
