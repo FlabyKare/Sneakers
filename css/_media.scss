@@ -9,26 +9,28 @@
 //    }
 // }
 
-@media (max-height: 774.98px) {
+@media (max-height: 939.98px) {
    .popup_wrapper {
       height: 90% !important;
       overflow-y: scroll;
-      border-top-right-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
+      //   border-top-right-radius: 0 !important;
+      //   border-bottom-right-radius: 0 !important;
       &::-webkit-scrollbar {
+         display: none;
          background: #43708f;
          width: 3px !important;
          max-width: 3px !important;
          min-width: 3px !important;
-
       }
       &::-webkit-scrollbar-button {
          display: none;
       }
       &::-webkit-scrollbar-track {
+         display: none;
          background: #43708f;
       }
       &::-webkit-scrollbar-thumb {
+         display: none;
          width: 100%;
          background: #fff;
          border-radius: 60px;
@@ -59,7 +61,9 @@
          }
       }
       .coune_mines {
-         left: -3% !important;
+         right: 0 !important;
+         width: fit-content !important;
+         left: 25% !important;
          top: 418px !important;
       }
       .coune_plus {
@@ -122,6 +126,7 @@
 // Intro
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+
    .element-animation {
       opacity: 1 !important;
    }
@@ -173,6 +178,18 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+footer{
+    *{
+        text-align: left !important;
+    }
+    main{
+        gap: 50px !important;
+        .contacts{
+            order: -1;
+        }
+    }
+}
+
    .element-animation {
       opacity: 1 !important;
    }

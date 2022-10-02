@@ -12,11 +12,10 @@ $title = $_POST['title'];
 $size = $_POST['size'];
 $price = $_POST['price'];
 
-
 $token = "5458501936:AAFNwuGja_j5FJHR2WzsOutvSVQSlEZOo4w";
 $chat_id = "-825651915";
 $arr = array(
-  'Имя пользователя: ' => $name,
+  'Имя: ' => $name,
   'Телефон: ' => $phone,
   'Связь: ' => $email,
   'Адресс: ' => $adress,
@@ -24,9 +23,6 @@ $arr = array(
   'Название: ' => $title,
   'Размер: ' => $size,
   'Цена: ' => $price
-
-
-
 );
 
 foreach($arr as $key => $value) {

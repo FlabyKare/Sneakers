@@ -92,7 +92,7 @@ let inputCounter = document.querySelector(".quantity"),
 
 if (bodyWidth < 576) {
    email.placeholder = "Мессенджер";
-   adress.placeholder = "Ваш адресс";
+   adress.placeholder = "Ваш адресс (по г.Нальчик)";
 }
 function popupActive() {
    popup.classList.toggle("active");
@@ -134,14 +134,14 @@ function generatePopup(productHTML) {
 function plus() {
    let price = pricePopup.dataset.price;
    inputCounter.value = +inputCounter.value + 1;
-   pricePopup.value = price * +inputCounter.value;
+   pricePopup.value = price * +inputCounter.value + " рублей";
 }
 function minus() {
    let price = pricePopup.dataset.price;
    if (+inputCounter.value > 1) {
       inputCounter.value = +inputCounter.value - 1;
    }
-   pricePopup.value = price * +inputCounter.value;
+   pricePopup.value = price * +inputCounter.value + " рублей";
 }
 
 // Отправка формы
@@ -189,24 +189,3 @@ window.addEventListener("DOMContentLoaded", function () {
       input.addEventListener("keydown", mask, false);
    });
 });
-
-// Отправка сообщений на почту
-
-// //E-mail Ajax Send
-// $("form").submit(function () {
-//    //Change
-//    var th = $(this);
-//    $.ajax({
-//       type: "POST",
-//       url: "mail.php", //Change
-//       data: th.serialize(),
-//    }).done(function () {
-//       window.location.href = "pages/thanks.html";
-
-//       setTimeout(function () {
-//          // Done Functions
-//          th.window.location.href = "../index.html";
-//       }, 9000);
-//    });
-//    return false;
-// });
